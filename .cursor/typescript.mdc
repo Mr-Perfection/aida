@@ -29,10 +29,20 @@ globs: **/*.ts, **/*.tsx, **/*.d.ts
 
 ## Functions
 - Use explicit return types for public functions
-- Use arrow functions for callbacks and methods
+- Use arrow functions for short functions (<3 instructions).
+- Apply RO-RO principle (object in, object out) to reduce parameters.
+- Use named functions for others.
 - Implement proper error handling with custom error types
 - Use function overloads for complex type scenarios
 - Prefer async/await over Promises
+- Avoid deep nesting:
+  - Use early returns.
+  - Extract utility functions.
+- Prefer higher-order functions (map, filter, reduce).
+- Keep functions short and focused (under 20 instructions).
+- Name functions with a verb and noun.
+- Return boolean functions as isX, hasX, canX.
+- Void functions should be named with executeX, saveX, etc.
 
 ## Best Practices
 - Enable strict mode in tsconfig.json
@@ -55,3 +65,14 @@ globs: **/*.ts, **/*.tsx, **/*.d.ts
 - Use the Factory pattern for object creation
 - Leverage dependency injection
 - Use the Module pattern for encapsulation 
+
+## Classes
+- Follow SOLID principles.
+- Prefer composition over inheritance.
+- Use interfaces for contracts.
+- Keep classes small if possible:
+  - <200 lines
+  - <10 public methods
+  - <10 properties
+- Prefer immutable data.
+- Use readonly and `as const` when applicable.

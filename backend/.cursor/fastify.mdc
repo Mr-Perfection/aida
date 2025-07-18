@@ -1,0 +1,18 @@
+---
+description: Conventions and best practices when using Fastify.
+globs:
+alwaysApply: false
+---
+
+- Use modular API structure:
+  - One module per domain
+  - One route per resource in a plugin
+  - One handler per route
+- Use Fastify hooks like `onRequest`, `preHandler`.
+- Use AJV + JSON Schema for input validation.
+- Create DTOs/input types.
+- Use Prisma Client for DB access.
+- Encapsulate DB logic in services.
+- Core folder for shared utilities:
+  - Middleware, logging, error handling, etc.
+- Use dotenv to manage environment variables.

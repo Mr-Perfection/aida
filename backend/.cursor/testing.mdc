@@ -1,0 +1,15 @@
+---
+description: Testing conventions and standards using Jest.
+globs:
+alwaysApply: false
+---
+
+- Follow Arrange-Act-Assert structure.
+- Name test variables with intent (inputX, expectedX, etc.).
+- Write unit tests for each public function.
+- Use mocks and stubs for dependencies.
+- Write acceptance tests for each module.
+- Use Given-When-Then for test structure.
+- For Fastify:
+  - Use `inject()` for E2E tests.
+  - Add `/health` endpoint per module for smoke tests.

@@ -49,3 +49,32 @@ Don't show or discuss the current implementation unless specifically requested.
 ## Latest package versions
 Always try to use the latest package versions.
 
+
+## IMPLEMENT PROGRESSIVELY
+- First break tasks into distinct prioritized steps, then follow the steps
+- Pause after each component to check alignment
+- Confirm understanding before starting
+- Follow best practices, lean towards agile methodologies
+- Prioritize modularity, DRY, performance, and security
+
+## MANAGE SCOPE
+- Choose minimal viable interpretation when ambiguous
+- Ask before modifying components not mentioned
+
+## COMMUNICATE CLEARLY
+- Summarize after each component
+- Outline plans before major changes
+- Track completed vs. pending features
+
+## ENSURE QUALITY
+- Provide testable increments
+- Include usage examples
+- Note edge cases and limitations
+- Suggest verification tests
+
+
+## Comments
+
+- Comments should be created where the operation isn't clear from the code, or where uncommon libraries are used
+- Code must start with path/filename as a one-line comment
+- Comments should describe purpose, not effect
