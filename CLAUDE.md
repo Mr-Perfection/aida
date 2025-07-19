@@ -152,6 +152,39 @@ Always try to use the latest package versions.
 - Suggest verification tests
 
 ### Comments
+- Don't comment on what the code does - make the code self-documenting
+- Use comments to explain why something is done a certain way
 - Comments should be created where the operation isn't clear from the code, or where uncommon libraries are used
 - Code must start with path/filename as a one-line comment
 - Comments should describe purpose, not effect
+- Document APIs, complex algorithms, and non-obvious side effects
+
+### Constants Over Magic Numbers
+- Replace hard-coded values with named constants
+- Use descriptive constant names that explain the value's purpose
+- Keep constants at the top of the file or in a dedicated constants file
+
+### Meaningful Names
+- Variables, functions, and classes should reveal their purpose
+- Names should explain why something exists and how it's used
+- Avoid abbreviations unless they're universally understood
+
+### Clean Structure
+- Keep related code together
+- Organize code in a logical hierarchy
+- Use consistent file and folder naming conventions
+
+### Encapsulation
+- Hide implementation details
+- Expose clear interfaces
+- Move nested conditionals into well-named functions
+
+### Code Quality Maintenance
+- Refactor continuously
+- Fix technical debt early
+- Leave code cleaner than you found it
+
+### Testing
+- Write tests before fixing bugs
+- Keep tests readable and maintainable
+- Test edge cases and error conditions
